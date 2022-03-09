@@ -41,3 +41,7 @@
   margin: 0 5px;
   border-radius: 20px;
 }
+
+button {
+  font-size: 10px;
+}

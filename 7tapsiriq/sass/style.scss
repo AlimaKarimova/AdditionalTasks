@@ -32,3 +32,11 @@
         border-radius: 20px;
     }
 }
+
+@mixin size ($size) {
+    font-size: $size;
+}
+
+button{
+    @include size(10px)
+}
