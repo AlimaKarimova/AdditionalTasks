@@ -61,7 +61,36 @@
 // }
 
 // gunler(eded)
-// Написать функцию, которая принимает строку (в этом тексте 3-5 предложений), верните каждое первое слово в каждом предложении, через запятую.
-// Написать функцию, которой передаем имя, и она возраващает приветствие в зависимости от времени суток (Доброе утро\день\вечер\ночи Иван)
-// Вывести числа от 1 до 100 в столбец. К каждой цифре подписать состояние возраста (1-17 ребенок, 18-30 - молодой, 30-55 - зрелый, от 55 - старый). Например. 33 - зрелый
-// Создай новую функцию, в которую передаешь имя и возраст человека и получаешь сообщение (Иван имеет возраст 44 и он зрелый). А также вызови внутри своей функции, функцию из прошлого задания
+
+// let gunler=['mon', 'tue', 'wen', 'thu', 'fri','sut', 'sun' ]
+
+//Create a function that takes an array containing only numbers and return the first element.
+
+// const array = [5, 10, 18, 56, 15]
+
+// function firstNumber () {
+//     return array[0]
+// }
+
+// firstNumber()
+
+// Given two arguments, return an array which contains these two arguments.
+
+// Examples
+// makePair(1, 2) ➞ [1, 2]
+
+// makePair(51, 21) ➞ [51, 21]
+
+// makePair(512124, 215) ➞ [512124, 215]
+
+// function makePair(num1, num2) {
+//     const arr = [];
+//     const newArr = arr.concat(num1, num2)
+//     console.log(newArr)
+// }
+// makePair(1, 2)
+
+// function makePair(num1, num2) {
+//     const arr = [];
+//     return arr.concat(num1, num2)
+// }
