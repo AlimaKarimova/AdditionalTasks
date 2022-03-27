@@ -94,3 +94,13 @@
 //     const arr = [];
 //     return arr.concat(num1, num2)
 // }
+
+// if (true) {
+//     let a = 5;
+//    }
+//    console.log(a); 
+
+for (let i = 0; i < 10; ++i) {
+    console.log(i++);
+
+}
