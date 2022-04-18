@@ -1,45 +1,20 @@
-"use strict"
-// function miniMaxSum(arr) {
-//     let minSum = 0;
-//     let maxSum=0;
-//     let result = []
-//     let sortArray = arr.sort(function (a, b) {
-//         return a - b
-//     })
-//     let len = sortArray.length
-//     for (let i = 0; i < arr.length; i++) {
-//         if (i < len - 1) {
-//             minSum += sortArray[i]
-//         } else {
-//             maxSum = sortArray[i] + minSum -sortArray[0]
-//         }
-//     }
-//     result.push(minSum, maxSum)
-//     return result
-
-// }
-// console.log(miniMaxSum([1, 10, 3, 4,5]))
-
 function miniMaxSum(arr) {
-    /*
-     * Write your code here.
-     */
-    let min = +Infinity;
-    let max = -Infinity;
+    let min;
+    let m;
+    let max = 0;
     let sum = 0;
-    let result=[];
-    for (let i = 0; i < arr.length; i++) {
+    for (let i in arr) {
         sum += arr[i];
-        if (arr[i] < min) {
-            min = arr[i];
-        }
-
-        if (arr[i] > max) {
+        if (arr[i] >= max) {
             max = arr[i];
-        }
-
+        };
+        m = arr[0]
+        if (arr[i] <= m) {
+            m= arr[i];
+            min = m
+        };
     }
-    result.push(sum-max,sum-min)
-    console.log(result);
+    console.log(`${sum - max} ${sum - min}`)
+
 }
-miniMaxSum([1, 3, 5, 7, 9])
+miniMaxSum([7, 69, 2, 221, 8974])

@@ -1,23 +1,20 @@
 function getMoneySpent(keyboards, drives, b) {
-    let maxKey = 0;
-    let maxDri = 0;
-    for (let x = 0; x < keyboards.length; x++) {
-        if (maxKey < keyboards[x]) {
-            maxKey = keyboards[x]
-
+    let max = 0;
+    for (let i in keyboards) {
+        for (let j in drives) {
+            if (keyboards[i] + drives[j] < b) {
+                if (keyboards[i] + drives[j]>max) {
+                    max = keyboards[i] + drives[j]
+                }
+            }
+        
         }
-    }
-    for (let y = 0; y < drives.length; y++) {
-        if (maxDri < drives[y]) {
-            maxDri = drives[y]
-        }
-    }
-
-    if ((maxDri + maxKey)<=b) {
-        return maxDri+maxKey 
-    } else {
+    } 
+    if(max){
+        return max
+    }else{
         return -1
     }
 
 }
-console.log(getMoneySpent([40, 55, 60], [5, 8, 10], 71))
+console.log(getMoneySpent([3, 1], [5, 2, 8], 10))
