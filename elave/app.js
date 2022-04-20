@@ -1,11 +1,19 @@
+// function marsExploration(s) {
+//     let str=s.split('')
+//     let count=0;
+//     for(let i in str){
+//         if(s[i]!="S" && s[i]!="O" ){
+//             count++
+//         }
+//     }return count
 
-
-
-// function simpleArraySum(ar) {
-//   let s=0;
-//   for(let i=0;i<ar.length;i++){
-//     s+=ar[i]
-//   }
-//   return s
 // }
-// console.log(simpleArraySum([1, 2, 3, 4, 10, 11]))
+// console.log(marsExploration('SOSSPSSQSSOR'))
+
+upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+function camelcase(s) {
+    let arr = s.match(/[A-Z]/g)
+    return arr.length+1
+}
+console.log(camelcase('saveChangesInTheEditor'))
