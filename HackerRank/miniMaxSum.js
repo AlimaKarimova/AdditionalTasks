@@ -7,11 +7,14 @@ function miniMaxSum(arr) {
         sum += arr[i];
         if (arr[i] >= max) {
             max = arr[i];
-        };
+        }
+    }
+    for (let i in arr) {
+        sum += arr[i];
         m = arr[0]
         if (arr[i] <= m) {
-            m= arr[i];
-            min = m
+            m = arr[i];
+            min = m;
         };
     }
     console.log(`${sum - max} ${sum - min}`)

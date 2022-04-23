@@ -1,19 +1,28 @@
-// function marsExploration(s) {
-//     let str=s.split('')
-//     let count=0;
-//     for(let i in str){
-//         if(s[i]!="S" && s[i]!="O" ){
-//             count++
-//         }
-//     }return count
+function alternate(s) {
+    let min = 0;
+    let max = 1;
+    let m;
 
-// }
-// console.log(marsExploration('SOSSPSSQSSOR'))
 
-upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    for (let i in s) {
+        for (let j in s) {
+            if (s[i] == s[j]) {
+                max += s[i].length;
+                if (s[i].length>=min) {
+                    min+=s[i].length
+                
+                }
 
-function camelcase(s) {
-    let arr = s.match(/[A-Z]/g)
-    return arr.length+1
+            }
+
+        }
+        return min
+    }
+
+
 }
-console.log(camelcase('saveChangesInTheEditor'))
+console.log(alternate('beabeefeab'));
+
+
+// let alen = s.match(/a/g, "")
+// let clen = s.match(/c/g, "")
