@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "UdemyJS",
+			"path": "..\\..\\UdemyJS"
+		},
+		{
+			"name": "UdemyWeb",
+			"path": "..\\..\\UdemyWeb"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PragmatechFrontEndProject"
+	}
+}
