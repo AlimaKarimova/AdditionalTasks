@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tenetur laudantium quasi nisi eligendi adipisci
+        excepturi eaque, consequuntur eum cumque provident quam dicta modi, harum, voluptates porro in dolore iure.</p>
+
+
+
+
+
+
+    <script>
+        const p = document.querySelector('p');
+        p.innerHTML = p.innerText
+            .split(' ')
+            .map(word => word.length > 8 ? `<span style="background-color: yellow ">${word}</span>` : word)
+            .join('   ');
+    </script>
+</body>
+
+</html>
