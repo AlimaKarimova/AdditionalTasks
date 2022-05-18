@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(249, 249, 234);
+}
+
+.wrapper {
+    width: 600px;
+}
+
+h3 {
+    text-align: center;
+}
+
+form {
+    background-color: rgb(224, 129, 129);
+    padding: 20px 30px;
+}
+label,input,button{
+    width: 100%;
+}
+label{
+    color: rgb(245, 237, 237);
+}
+form div{
+    margin-bottom: 20px;
+}
+form button{
+    padding: 3px 8px;
+}
+
+.quiz-box div{
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(224, 129, 129);
+    margin-bottom: 20px;
+}
+.quiz-box h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+
+}
+.quiz-box ul{
+    list-style:none;
+}
+.quiz-box ul li{
+    margin-bottom: 10px;
+    background-color: rgb(237, 240, 243);
+    color: rgb(81, 77, 77);
+    padding: 2px 15px;
+    border: 1px solid transparent;
+}
+.quiz-box ul li:hover{
+    background-color: rgb(234, 183, 16);
+    transform: scale(1.05);
+    border: 1px solid rgb(174, 138, 20);
+    box-shadow: 1px 1px 1px 2px ;
+
+}
