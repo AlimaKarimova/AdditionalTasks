@@ -11,7 +11,7 @@ const submitBtn = document.getElementById('submitBtn');
 let obj = {};
 
 function addNewQuestion(e) {
-    e.preventDefault();
+    // e.preventDefault();
     obj.text = newQuestion.value;
     obj.options = [];
     obj.options[0] = option1.value;
@@ -20,6 +20,7 @@ function addNewQuestion(e) {
     obj.options[3] = option4.value;
     obj.correctAnswer = option5.value;
     QuestionsDB.push(obj);
+
 }
 
 const QuestionsDB = [{
