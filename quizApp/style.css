@@ -1,62 +1,53 @@
+/* common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(249, 249, 234);
+    font-size: 16px;
 }
 
-.wrapper {
-    margin: 0 auto;
-    width: 600px;
+li {
+    list-style: none;
 }
 
-h3 {
-    text-align: center;
-}
-
-form {
-    background-color: rgb(224, 129, 129);
+.container {
+    width: 400px;
+    background-color: rgb(61, 167, 167);
+    border-radius: 20px;
+    margin: 30px auto;
     padding: 20px 30px;
 }
-label,input,button{
-    width: 100%;
-}
-label{
-    color: rgb(245, 237, 237);
-}
-form div{
-    margin-bottom: 20px;
-}
-form button{
-    padding: 3px 8px;
-}
 
-.quiz-box div{
-    width: 400px;
-    padding: 20px;
-    background-color: rgb(224, 129, 129);
-    margin-bottom: 20px;
-}
-.quiz-box h4{
+h4 {
+    font-size: 18px;
     text-align: center;
-    color: white;
-    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgba(223, 206, 18, 0.918);
+    font-weight: 700;
+}
 
+.btn {
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
 }
-.quiz-box ul{
-    list-style:none;
+
+.hide{
+    display: none;
 }
-.quiz-box ul li{
+/* css */
+
+.quiz-box ul li {
     margin-bottom: 10px;
-    padding: 2px 15px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 2px 10px;
 }
-.none-checked{
-    background-color: rgb(237, 240, 243);
-    color: rgb(81, 77, 77);
 
-}
-.checked{
-    background-color: rgb(234, 183, 16);
-    box-shadow: 1px 1px 1px 2px ;
-    padding: 2px 15px;
-    margin-bottom: 10px;
-
+.quiz-box ul li input {
+    margin-right: 10px;
 }
